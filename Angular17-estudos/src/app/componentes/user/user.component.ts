@@ -14,9 +14,9 @@ export class UserComponent {
   username: string = 'YoungTech Mauro';
   favoriteFramework: string = '';
   userNamesArrays = [
-    { id: 0, nome: 'Mauro' },
-    { id: 1, nome: 'Paulo' },
-    { id: 2, nome: 'Matheus' },
+    { id: 0, nome: 'Mauro', profession: 'Developer', age: 25 },
+    { id: 1, nome: 'Paulo', profession: 'Developer', age: 25 },
+    { id: 2, nome: 'Matheus', profession: 'Developer', age: 25 },
   ];
 
   //(ngModelChange) = onFavoriteFrameworkChange($event)

@@ -2,6 +2,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { SizerComponent } from './componentes/sizer/sizer.component';
+import { Sidenavteste1Component } from './componentes/sidenavteste-1/sidenavteste-1.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { SizerComponent } from './componentes/sizer/sizer.component';
     RouterLink,
     NgOptimizedImage,
     SizerComponent,
+    Sidenavteste1Component,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

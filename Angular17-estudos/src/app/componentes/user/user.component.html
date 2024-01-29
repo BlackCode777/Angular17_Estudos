@@ -14,7 +14,7 @@
   </p>
   <p>
     {{ username }}'s favorite framework:
-    <strong style="color: rgb(243, 70, 185)">{{ favoriteFramework }}</strong>
+    <strong style="color: rgb(73, 68, 72)">{{ favoriteFramework }}</strong>
   </p>
   <label for="framework">Favorite Framework:</label>
   <input type="text" id="framework" [(ngModel)]="favoriteFramework" />
@@ -22,21 +22,20 @@
 
 <br />
 
-<div style="margin-top: 23px">
+<!-- <div style="margin-top: 23px">
   <p>Teste do for</p>
   @for( item of userNamesArrays; track item.id ){
   <span style="display: flex; flex-direction: column">{{ item.nome }}</span>
   }
-</div>
+</div> -->
 <div style="margin-top: 23px">
   <span> Teste do switch </span>
-  @switch( userNamesArrays ){ @case( userNamesArrays[0].nome == 'Mauro' ){
-  <span style="background-color: aqua; padding: 10px">Mauro</span>
-  } @case( userNamesArrays[1].nome == 'Paulo' ){
-  <span style="background-color: #1895fc; padding: 10px">Paulo</span>
-  } @case( userNamesArrays[2].nome == 'João' ){
-  <span style="background-color: #253eac; padding: 10px">João</span>
+  @for( user of userNamesArrays; track user.id ){ @switch ( user.age ) {
+  @case(20){
+  <span> {{ user.nome }}, {{ user.profession }} idade 20</span>
   } @default {
-  <span style="background-color: #f00; padding: 10px">Default</span>
-  } }
+  <span> {{ user.nome }}, {{ user.profession }} idade {{ user.age }}</span>
+  } } } @empty {
+  <span> Não há usuários cadastrados </span>
+  }
 </div>

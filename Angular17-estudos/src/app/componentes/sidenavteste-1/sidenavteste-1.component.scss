@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.logo_details {
+  #btn {
+    font-size: 23px;
+    text-align: center;
+    transition: all 0.5s ease;
+
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+}
